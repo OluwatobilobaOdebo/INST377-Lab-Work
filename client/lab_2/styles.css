@@ -42,7 +42,7 @@
   }
   
   .title{
-    display: inline-block;
+    display: flex;
     background-color: rgba(0,139, 139,0.8);
     border-radius: 4px;
     padding: 10px 15px;
