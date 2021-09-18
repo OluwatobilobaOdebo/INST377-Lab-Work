@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    margin:10px;
+  }
 
 .title {
     display: flex;
@@ -63,12 +69,22 @@ margin-bottom: 20px;
     justify-content: center;
 }
 
+@media only screen and (max-width:400 px){
+
+
+.image{
+    max-width: 100%;
+    height: auto;
+}
+
+}
+
 .photo-grid{
     width: 900px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction:row;
     align-items: center;
 }
 
