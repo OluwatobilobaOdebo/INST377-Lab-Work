@@ -110,18 +110,20 @@ margin-bottom: 20px;
 }
 
 .carousel_actions button:focus{
-    border: 3px solid rgba(42, 87, 87, 0.8);
+    border: 3px solid grey;
     background:sandybrown;
 }
 
 
 .photo-grid-container .carousel_actions button#carousel_button--prev{
     margin-left: -50px;
+    
    
 }
 
 .photo-grid-container .carousel_actions button#carousel_button--next{
     margin-right: -50px;
+    
 }
 
 .footer {
