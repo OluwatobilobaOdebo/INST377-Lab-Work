@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display:flex;
+    flex-direction: column;
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+    margin:10px;
+  }
+
+.title {
+    display: flex;
+    background-color: rgba(0,139, 139, 0.8);
+    border-radius: 1 px;
+    padding: 20 px 0;
+    margin: 0;
+}
+
+.menu-container{
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-page{
+    margin-left: 20px;
+}
+
+.header-container{
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-github,
+.project {
+align-self: flex-end;
+margin-bottom: 20px;
+}
+
+.photo-grid-container{
+    
+    overflow: hidden;
+    max-width: 900px;
+    position:relative;
+    display: flex;
+    justify-content:center;
+
+}
+
+.photo-grid-container .carousel_item,
+.photo-grid-container .carousel_item--hidden{
+    display: none;
+}
+
+.photo-grid-container .carousel_item img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+}
+
+.photo-grid-container .carousel_item--visible{
+    display: block;
+}
+
+.photo-grid-container .carousel_actions{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.photo-grid-container .carousel_actions button{
+    border-radius: 5px;
+    border: 0;
+    border-width: 10px 20px;
+    padding: 4px;
+    font-size: 10px;
+    margin: 0px; 
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.photo-grid-container .carousel_actions button#carousel_button--prev{
+    margin-left: -50px;
+}
+
+.photo-grid-container .carousel_actions button#carousel_button--next{
+    margin-right: -50px;
+}
+
+@media only screen and (max-width:400 px){
+.image{
+    max-width: 100%;
+    height: auto;
+}
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-one,
+.footer-three{
+    background-color: #5995DA;
+        flex: initial;
+        width: 300px; 
+} 
