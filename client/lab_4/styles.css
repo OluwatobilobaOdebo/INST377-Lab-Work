@@ -67,11 +67,10 @@ margin-bottom: 20px;
 .photo-grid-container{
     
     overflow: hidden;
-    max-width: 900px;
+    max-width: 100%;
     position:relative;
     display: flex;
-    justify-content:center;
-
+    justify-content: center;
 }
 
 .photo-grid-container .carousel_item,
@@ -102,7 +101,7 @@ margin-bottom: 20px;
 .photo-grid-container .carousel_actions button{
     border-radius: 5px;
     border: 0;
-    border-width: 10px 20px;
+    border-width: 10px;
     padding: 4px;
     font-size: 10px;
     margin: 0px; 
@@ -110,19 +109,19 @@ margin-bottom: 20px;
     cursor: pointer;
 }
 
+.carousel_actions button:focus{
+    border: 3px solid rgba(42, 87, 87, 0.8);
+    background:sandybrown;
+}
+
+
 .photo-grid-container .carousel_actions button#carousel_button--prev{
     margin-left: -50px;
+   
 }
 
 .photo-grid-container .carousel_actions button#carousel_button--next{
     margin-right: -50px;
-}
-
-@media only screen and (max-width:400 px){
-.image{
-    max-width: 100%;
-    height: auto;
-}
 }
 
 .footer {
@@ -140,6 +139,5 @@ margin-bottom: 20px;
 .footer-one,
 .footer-three{
     background-color: #5995DA;
-        flex: initial;
-        width: 300px; 
+    
 } 
