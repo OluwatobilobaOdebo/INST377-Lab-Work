@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html land='en'>
+    <head>
+     <meta charset='UTF-8'/>
+     <title>Oluwatobiloba Odebo's Lab 5</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+     <link rel="stylesheet" href="styles.css"/>
+    </head>
+   <body>
+       <div class="wrapper">
+           <div class="container">
+               <div class="columns">
+                   <div class = "column is-full">Oluwatobiloba Odebo's Lab 5</div>
+                   <div class = "column is-one-quarter">
+                    <form action='/api' method='get' class='speaker-form'>
+                       <div class='form-row'>
+                           <label for='first-name'><strong>First Name</strong></label>
+                           <input id='first-name' name='first-name' type='text'/>
+                       </div>
+                       <div class='form-row'>
+                           <label for='food-preference'><strong>Food Preference</strong></label>
+                           <input id='food-preference' name='food-preference' type='text'/>
+                       </div>
+                       <fieldset class ='legacy-form-row'>
+                           <legend><strong>Veggie or Vegan?</strong> </legend>
+                           <input id='veggie-or-vegan-1'
+                                  name='veggie-or-vegan'
+                                  type='radio'
+                                  value='yes'/>
+                            <label for='veggie-or-vegan-1' class='radio-label'>Yes</label>
+                            <input id='veggie-or-vegan-2'
+                                   name='veggie-or-vegan'
+                                   type='radio'
+                                   value='no'/>
+                            <label for='veggie-or-vegan-2' class='radio-label'>No</label>  
+                       </fieldset>
+                       <div class='column is-one-third'>
+                       <div class='form-row'>
+                           <button>Submit</button>
+                       </div>
+                       </div>
+                    </form>
+                   </div>
+                   <div class='column is-two-fifths'>This is going to be something in two weeks.</div>
+               </div>
+           </div>
+       </div>
+   </body>
+
+</html>
