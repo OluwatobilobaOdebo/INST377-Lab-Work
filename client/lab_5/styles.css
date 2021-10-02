@@ -4,18 +4,26 @@
   box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’,
     ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-  background-color: darkslategray;
+  background-color: rgb(102, 101, 66);
+  min-height: 100%;
 }
 
 /* Page Layout */
 .columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  
 }
 
 .wrapper {
@@ -24,4 +32,109 @@ body {
 .container {
   max-width: 960px;
   margin-top: 25px;
+}
+
+.is-full{
+    border-radius: 7px;
+    font-size: 25px;
+    background-color: rgb(148, 152, 202);
+}
+
+.speaker-form{
+    background-color: #F6F7F8;
+    border: 1px solid #D6D9DC;
+    border-radius: 8px;
+
+    width: 90%;
+    padding: 17px 25px;
+    margin: 15px 0 20px 0;
+    
+}
+
+.is-one-quarter .form-row{
+
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.is-one-quarter .form-row input[type='text']{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.is-one-quarter .form-row label{
+    margin-bottom: 15px;
+}
+
+.legacy-form-row{
+  border: none;
+  margin-bottom: 10px;
+}
+
+.legacy-form-row legend{
+  margin-bottom: 15px;
+}
+
+.legacy-form-row .radio-label{
+  display: block;
+  font-size: 14px;
+  padding: 0 8px 0 10px;
+  position: relative;
+
+}
+
+.legacy-form-row input[type='radio']{
+  margin-top: 0;
+}
+
+.legacy-form-row .radio-label,
+.legacy-form-row input[type='radio']{
+  
+  float:left;
+}
+
+.is-one-third .form-row button{
+  font-size: 15px;
+  
+
+  color: #FFFFFF;
+  background-color:rgb(152, 201, 152);
+
+  border: none;
+  border-radius: 5px;
+
+  padding: 13px 27px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content:center;
+
+}
+
+.is-one-third .form-row button:hover{
+  background-color: lightgreen;
+}
+
+.is-one-third .form-row button:active{
+  background-color: green;
+}
+
+.is-two-fifths{
+  border-radius: 6px;
+  font-size: 13px;
+  background-color:white;
+  
+  padding: 25px 30px;
+  height: 65px;
+  
+  
 }
