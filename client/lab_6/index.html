@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Oluwatobiloba Odebo: Lab 6</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div class = "container">
+                <div class = "columns">
+                    <div class = "column is-full">Oluwatobiloba Odebo's Lab 6</div>
+                    <div class = "column is-one-quarter">
+                        <form class="form-row">
+                            <label for="search"></label>
+                            <input type="text" class = "search" placeholder="enter city name">
+                            <ul class= "suggestions">
+                                <li> </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
+
+            const cities = [];
+
+            const prom = fetch(endpoint).then(blob => blob.json()).then(data => cities.push(...data))
+
+            function findMatches(wordToMatch, cities){
+                return cities.filter(place => {
+
+                    const regex = new RegExp(wordToMatch, 'gi');
+                    return place.city.match(regex);
+                })
+            }
+
+            function displayMatches(){
+                const matchArray = findMatches(this.value, cities);
+                const html = matchArray.map(place => {
+                    return 
+
+                    
+                });
+            }
+
+            const searchInput = document.querySelector('.search');
+            const suggestions = document.querySelector('.suggestions');
+
+            searchInput.addEventListener('change', displayMatches);
+            searchInput.addEventListener('keyup', displayMatches);
+
+        </script>
+    </body>
+</html>
