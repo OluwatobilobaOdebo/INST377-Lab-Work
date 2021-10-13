@@ -60,3 +60,13 @@ body {
 .is-one-quarter .form-row label{
     margin-bottom: 15px; 
 }
+
+.suggestions{
+  margin-top: 20px;
+}
+
+ul{
+
+  list-style-type: disc;
+  
+}
