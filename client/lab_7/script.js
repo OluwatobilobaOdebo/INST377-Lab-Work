@@ -49,18 +49,20 @@ async function dataHandler(){
     
         function displayMatches(event){
             marker = markers[0];
+        
             markers.forEach( marker => {
                 marker.remove();
             })
            const matchArray = findMatches(event.target.value, zipcode).slice(0,5);
            
-            matchArray.forEach(p => {
-                if(p.hasOwnProperty('geocoded_column_1')) {
-                    const point = p.geocoded_column_1
-                    const latlong = point.coordinates
-                    const marker = latlong.reverse()
-                    markers.push(L.marker(marker).addTo(mymap))
-                    console.log(markers)
+            matchArray.forEach((p) => {
+                if(p.hasOwnProperty(`geocoded_column_1`)) {
+                    const point = p.geocoded_column_1;
+                    const latlong = point.coordinates;
+                    const marker = latlong.reverse();
+                    markers.push(L.marker(marker).addTo(mymap));
+                    
+                    console.log(marker)
                 }
             })
 
