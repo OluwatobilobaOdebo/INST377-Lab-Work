@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Oluwatobiloba Odebo's Lab 7</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div class = "container">
+                <div class = "columns">
+                    <div class = "column is-full"><b>Oluwatobiloba Odebo's Lab 7</b>
+                        <p>Zip Code Food Search</p>
+                    </div>
+                    <div class = "column is-one-quarter">
+                        <form class="form-row">
+                            <label for="search"></label>
+                            <input type="text" class = "search" placeholder="enter zip code">
+                            <ul class= "suggestions"></ul>
+                        </form>
+                    </div>
+
+                    <div class = "column">
+                        <div id="mapid"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <script src ="script.js"></script>
+    </body>
+</html>
