@@ -18,6 +18,7 @@ body {
   }
 
   .columns {
+      
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5px;
@@ -37,6 +38,16 @@ body {
       background-color:lightyellow;
       border-radius: 10px;
   }
+
+
+.searchword{
+
+
+    margin-bottom: 0px;
+    font-size: 13px;
+    
+}
+
 
   .is-full{
     border-radius: 7px;
@@ -79,7 +90,8 @@ p{
 }
 
 .is-one-quarter .form-row label{
-    margin-bottom: 15px; 
+   
+    margin-bottom: 5px; 
 }
 
 .suggestions{
